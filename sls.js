@@ -1,6 +1,6 @@
 const Koa = require('koa');
 
-const createServer = () => {
+const createServer = async () => {
   const app = new Koa();
 
   app.use(async ctx => {
