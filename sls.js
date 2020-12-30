@@ -11,7 +11,7 @@ const createServer = async () => {
 }
 
 if (process.env.SERVERLESS) {
-  module.exports = createServer
+  module.exports = createServer()
 } else {
   createServer().listen(3000)
 }
